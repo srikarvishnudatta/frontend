@@ -1,0 +1,12 @@
+.experience{
+    margin-top: var(--sp-md);
+}
+.expheader{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+.title{
+    margin-top: var(--sp-xs);
+    font-size: 0.9rem;
+}

@@ -1,0 +1,25 @@
+.list{
+    display: flex;
+    list-style: none;
+    margin-top: var(--sp-sm);
+}
+.listitem{
+    padding-right: var(--sp-xs);
+}
+.buttonwrapper{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+.button{
+    padding: 0.5rem 1rem;
+    background-color: var(--bg-color);
+    color: var(--header-text);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0s;
+}
+.button:hover{
+    color: var(--white);
+    background-color: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,26 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--ft-inter);
+    padding-top: var(--sp-md);
+    background-color: var(--header-bg);
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding-bottom: var(--sp-sm);
+    background: transparent;
+    backdrop-filter: blur(3px);
+}
+.header{
+    color: var(--header-text);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.header a{
+    text-decoration: none;
+}
+.list{
+    display: flex;
+    list-style: none;
+    color: var(--header-text);
+}

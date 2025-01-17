@@ -1,0 +1,120 @@
+:root{
+  /* spacing */
+  --sp-xs: 0.5rem;
+  --sp-sm: 0.75rem;
+  --sp-rg: 1rem;
+  --sp-md: 1.5rem;
+  --sp-lg: 2rem;
+  --sp-xl: 2.5rem;
+
+  --ft-lora: "Lora", sans-serif;
+  --ft-inter: "Inter", serif; 
+
+  --bg-color:#1c1917;
+  --header-bg:#1c1814;
+  --white: rgb(255, 255, 255);
+  --header-text:rgba(255, 255, 255, 0.75);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: var(--ft-lora);
+  background-color: var(--bg-color);
+  color: var(--header-text);
+}
+#root{
+  max-width: 800px;
+  margin: 0 auto;
+}
+.header{
+  color: var(--white);
+  font-family: var(--ft-inter);
+  font-weight: 500;
+}
+.arrow-header{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.paragraph{
+  margin-top: var(--sp-md);
+  line-height: 1.7rem;
+}
+.link{
+  text-decoration: underline;
+  font-family: var(--ft-lora);
+  text-underline-offset: 0.2rem;
+  text-decoration-color: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease-out 0s;
+}
+a{
+  color: var(--header-text);
+}
+.link:hover{
+  color: var(--white);
+  text-decoration-color: var(--white);
+}
+.link-external{
+  font-family: var(--ft-inter);
+}
+.cards{
+  margin-top: var(--sp-md);
+}
+.box{
+  padding-top: var(--sp-xl);
+}
+.button{
+  padding: 0.5rem 1rem;
+  background-color: var(--bg-color);
+  color: var(--header-text);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out 0s;
+}
+a{
+  text-decoration: none;
+}
+.button:hover{
+  color: var(--white);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.card{
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.8rem;
+  border-radius: 10px;
+  margin-bottom: var(--sp-sm);
+  transition: all 0.3s ease-in-out 0s;
+}
+.card:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+}
+.card h4{
+  font-weight: 500;
+  font-size: 1.1rem;
+  font-family: var(--ft-inter);
+}
+.card p{
+  margin-top: 4px;
+  font-size: 0.95rem;
+}
+.heading-link{
+  display: flex;
+  justify-content: space-between;
+}
+.load-animation{
+  animation: animate 500ms ease-in;
+}
+@keyframes animate {
+  from{
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 100;
+  }
+}

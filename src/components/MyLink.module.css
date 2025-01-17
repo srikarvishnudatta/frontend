@@ -1,0 +1,7 @@
+.listitem{
+    text-decoration: underline;
+    padding-left: var(--sp-xs);
+    padding-right: var(--sp-xs);
+    text-underline-offset: 0.2rem;
+    text-decoration-color: rgba(255, 255, 255, 0.4);
+}

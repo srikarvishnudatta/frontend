@@ -1,18 +1,31 @@
+import { useEffect, useRef } from "react";
 import Experience from "../components/Experience";
 import Section from "../components/Section";
 import Space from "../components/Space";
 import styles from "./Home.module.css"
 
 function Home() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  useEffect(()=>{
+    if(containerRef.current){
+      const children = containerRef.current.children;
+
+      Array.from(children).forEach((child, index) =>{
+        const htmlChild = child as HTMLElement;
+        htmlChild.classList.add("load-animation");
+        htmlChild.style.animationDelay = `${index * 100}ms`
+      })
+    } 
+  },[]);
   const contacts = [
     {id: 1, name:"resume", link:""},
     {id: 2, name:"Github", link:"https://github.com/srikarvishnudatta"},
     {id: 3, name:"LinkedIn", link:"https://linkedin.com/in/srikar-akella01"},
     {id: 4, name:"srikarakella28@gmail.com", link:"mailto:srikarakella28@gmail.com"}];
   return (
-    <section>
+    <section ref={containerRef}>
      <Space height="100px"/>
-     <div className="">
+     <div>
       <p className={"header "}>Hi, I'm Srikar </p>
       <p className={"paragraph "}>
         I am full stack developer specialising in Python, Typescript, React and Nodejs. Currently I'm working on a Splitwise clone. I love to cook, create new recipes and write blogs of my life in Toronto.

@@ -106,7 +106,7 @@ a{
   justify-content: space-between;
 }
 .load-animation{
-  animation: animate 500ms ease-in;
+  animation: animate 400ms ease-in;
 }
 @keyframes animate {
   from{
@@ -115,6 +115,6 @@ a{
   }
   to{
     transform: translateY(0);
-    opacity: 100;
+    opacity: 1;
   }
 }
